@@ -1,0 +1,70 @@
+/* Navigation.css */
+
+nav {
+    background-color: black; /* Dark background for contrast */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Space out the navigation items */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav .nav-brand {
+    font-size: 1.5rem; /* Larger font size for brand name */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    display: flex; /* Arrange items in a row */
+    gap: 20px; /* Spacing between items */
+}
+
+nav ul li {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+}
+
+nav .menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
+    font-size: 1.5rem; /* Larger size for visibility */
+    cursor: pointer; /* Pointer cursor for clickable area */
+}
+  
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation items on mobile */
+        flex-direction: column; /* Arrange items in a column */
+        width: 100%; /* Full width */
+        background-color: black; /* Dark background */
+        position: absolute; /* Position over other elements */
+        top: 80px; /* Position below the nav bar */
+        left: 0; /* Align to the left */
+        
+
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    nav .menu-toggle {
+        display: block; /* Show the menu toggle button on mobile */
+    }
+}

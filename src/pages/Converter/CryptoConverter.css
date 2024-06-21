@@ -1,0 +1,91 @@
+/* CryptoConverter.css */
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+.converter h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.converter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter-controls select,
+.converter-controls input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+}
+
+.converter-controls input::placeholder {
+    color: #bbb;
+}
+
+.converter-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.converter-controls button:hover {
+    background-color: #0056b3;
+}
+
+.conversion-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 600px) {
+    .converter {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .converter h1 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .converter-controls {
+        gap: 8px;
+    }
+
+    .converter-controls select,
+    .converter-controls input,
+    .converter-controls button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .converter-controls button {
+        padding: 8px 16px;
+    }
+
+    .conversion-result {
+        font-size: 1rem;
+    }
+}

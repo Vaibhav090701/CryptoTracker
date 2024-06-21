@@ -1,0 +1,86 @@
+.home{
+padding: 0px 10px;
+padding-bottom: 100px;
+}
+.hero{
+max-width: 600px;
+margin: 60px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center; gap: 30px;
+}
+.hero h1{
+    font-size: 25px;
+    color: #e3e3e3;
+}
+
+.crypto-table{
+max-width: 800px;
+margin: auto;
+background: linear-gradient(rgba(84,3,255,0.15), rgba(105,2, 153,0.15));
+border-radius: 15px;
+border-color: #fff;
+overflow-x: auto; /* Enables horizontal scrolling */
+-webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+
+}
+.table-layout{
+display: grid;
+grid-template-columns: 0.5fr 2.5fr 1fr 1fr 1.5fr;
+padding: 15px 20px;
+align-items: center;
+border-bottom: 1px solid #3c3c3c;
+color: #fff;
+}
+
+.table-layout p{
+    font-size: 18px;
+}
+.market-cap{
+    text-align: right;
+}
+
+.table-layout:last-child{
+border: none;
+}
+.table-layout div{
+display: flex;
+align-items: center; 
+gap: 10px;
+color: #fff;
+
+}
+
+.table-layout div img{
+width: 35px;
+}
+
+.table-layout .green{
+color: #00D515;
+text-align: center;
+}
+.table-layout .red{
+color: #ff4646;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.table-layout{
+grid-template-columns: 0.5fr 3fr 2fr 1fr;
+}
+.market-cap{
+display: none;
+}
+}
+@media (max-width: 500px) {
+.table-layout div img{
+width: 25px;
+}
+.table-layout{
+font-size: 13px;
+}
+.hero form input{
+width: 100px;
+}
+}
